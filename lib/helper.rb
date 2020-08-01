@@ -4,13 +4,16 @@ require 'json'
 require_relative 'telegram_bot.rb'
 
 class Inspire
-  @values = nil
+  attr_reader :joke, :inspiration
 
   def initialize
-    @values = make_the_request
+    @joke = request_joke
+    @inspiration = request_inspiration
   end
 
-  def make_the_request
+  private
+
+  def request_joke
     url = 'https://sv443.net/jokeapi/v2/joke/Programming,Any?format=xml&blacklistFlags=nsfw,sexist&type=single'
     uri = URI(url)
     response = Net::HTTP.get(uri)
@@ -18,8 +21,12 @@ class Inspire
     response
   end
 
-  def select_random
-    @values = @values.sample
-    @values
+  def request_inspiration
+    url = 'http://www.quotesdaddy.com/api/'
+    uri = URI(url)
+    response = Net::HTTP.get(uri)
+    response = JSON.parse(response)
+    response
   end
-end
+  
+ end
