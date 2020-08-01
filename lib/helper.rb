@@ -11,7 +11,7 @@ class Inspire
   end
 
   def make_the_request
-    url = 'https://type.fit/api/quotes'
+    url = 'https://sv443.net/jokeapi/v2/joke/Programming,Any?format=xml&blacklistFlags=nsfw,sexist&type=single'
     uri = URI(url)
     response = Net::HTTP.get(uri)
     response = JSON.parse(response)
