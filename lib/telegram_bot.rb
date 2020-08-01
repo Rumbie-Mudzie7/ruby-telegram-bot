@@ -1,6 +1,7 @@
 require 'telegram/bot'
-require_relative 'quotes.rb'
-
+require_relative '../lib/quotes.rb'
+require 'dotenv'
+Dotenv.load('./.env')
 
 class Bot < Inspire
   def initialize
