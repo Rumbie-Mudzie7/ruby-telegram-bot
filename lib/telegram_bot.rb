@@ -1,8 +1,8 @@
 require 'telegram/bot'
-require_relative 'helper.rb'
+require_relative 'quotes.rb'
 
 
-class Bot < Messages
+class Bot < Inspire
   def initialize
     token = ENV['TOKEN'] 
   
