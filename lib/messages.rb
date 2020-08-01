@@ -1,3 +1,10 @@
 class Messages
-    def 
+    def initiliaze 
+    end
+    
+    def inspiration
+    end
+
+    def joke
+    end
 end

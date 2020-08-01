@@ -3,7 +3,7 @@ require 'net/http'
 require 'json'
 require_relative 'telegram_bot.rb'
 
-class Motivate
+class Inspire
   @values = nil
 
   def initialize
