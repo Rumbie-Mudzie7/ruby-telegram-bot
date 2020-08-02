@@ -4,11 +4,12 @@ require 'dotenv'
 Dotenv.load('./.env')
 
 class Bot < Inspire
+  @@token = ENV['TOKEN']
   def initialize
-    token = ENV['TOKEN'] 
-  
+    @@token
+  end
 
-  Telegram::Bot::Client.run(token) do |bot|
+  Telegram::Bot::Client.run(@@token) do |bot|
     bot.listen do |message|
       case message.text
       when '/start'
@@ -19,14 +20,12 @@ class Bot < Inspire
 
         bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}", date: message.date)
       when '/inspire'
-        joke = Inspire.new
-        inspiration = Inspire.new
-        joke = joke.select_random
-        inspiration = inspiration.select_random
+        joke = self.request_joke.select_random
+        inspiration = self.request_inspiration.select_random
         bot.api.send_message(chat_id: message.chat.id, text: "#{joke['text']}", date: message.date)
-      else bot.api.send_message(chat_id: message.chat.id, text: "Invalid entry, #{message.from.first_name}, you need to use  /start,  /stop , /inspire or /joke")
+      else
+        bot.api.send_message(chat_id: message.chat.id, text: "Invalid entry, #{message.from.first_name}, you need to use  /start,  /stop , /inspire or /joke")
       end
     end
-  end
   end
 end

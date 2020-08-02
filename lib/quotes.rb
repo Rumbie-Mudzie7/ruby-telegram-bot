@@ -4,27 +4,23 @@ require 'json'
 require_relative 'telegram_bot.rb'
 
 class Inspire
-  attr_reader :joke, :inspiration
+  attr_reader :request_joke, :request_inspiration
 
-  def initialize
-    @joke = request_joke
-    @inspiration = request_inspiration
-  end
+  def initialize; end
 
-  def request_joke
-    url = 'https://sv443.net/jokeapi/v2/joke/Programming,Any?format=xml&blacklistFlags=nsfw,sexist&type=single'
+  def self.request_joke
+    url = 'https://geek-jokes.sameerkumar.website/api'
     uri = URI(url)
     response = Net::HTTP.get(uri)
     response = JSON.parse(response)
     response
   end
 
-  def request_inspiration
-    url = 'http://www.quotesdaddy.com/api/'
+  def self.request_inspiration
+    url = 'https://type.fit/api/quotes'
     uri = URI(url)
     response = Net::HTTP.get(uri)
     response = JSON.parse(response)
     response
   end
-  
- end
+end
