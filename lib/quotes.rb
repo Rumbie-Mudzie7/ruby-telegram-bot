@@ -11,8 +11,6 @@ class Inspire
     @inspiration = request_inspiration
   end
 
-  private
-
   def request_joke
     url = 'https://sv443.net/jokeapi/v2/joke/Programming,Any?format=xml&blacklistFlags=nsfw,sexist&type=single'
     uri = URI(url)
