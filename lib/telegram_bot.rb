@@ -22,7 +22,7 @@ class Bot < Inspire
         when '/inspire'
           joke = self.request_joke
           inspiration = self.request_inspiration
-          bot.api.send_message(chat_id: message.chat.id, text: "#{joke['text']}", date: message.date)
+          bot.api.send_message(chat_id: message.chat.id, text: inspiration, date: message.date)
         else
           bot.api.send_message(chat_id: message.chat.id, text: "Invalid entry, #{message.from.first_name}, you need to use  /start,  /stop , /inspire or /joke")
         end
