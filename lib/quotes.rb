@@ -9,7 +9,7 @@ class Inspire
   def initialize; end
 
   def self.request_joke
-    url = 'https://geek-jokes.sameerkumar.website/api'
+    url = 'http://webknox.com/api/jokes/'
     uri = URI(url)
     response = Net::HTTP.get(uri)
     response = JSON.parse(response)
