@@ -9,10 +9,10 @@ class Inspire
   def initialize; end
 
   def self.request_joke
-    url = 'http://webknox.com/api/jokes/'
+    url = 'https://type.fit/api/quotes'
     uri = URI(url)
     response = Net::HTTP.get(uri)
-    response = JSON.parse(response)
+    # response = JSON.parse(response)
     response
   end
 
@@ -23,4 +23,9 @@ class Inspire
     response = JSON.parse(response)
     response
   end
+
+  def select_random
+
+  end
+
 end
