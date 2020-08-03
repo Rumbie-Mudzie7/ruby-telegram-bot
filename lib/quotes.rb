@@ -4,8 +4,12 @@ require 'json'
 require_relative 'telegram_bot.rb'
 
 class Inspire
-  
-  def initialize; end
+  attr_reader :joke, :inspiration
+
+  def initialize
+    @joke = joke
+    @inspiration = inspiration
+  end
 
   def request_joke
     url = URI("https://joke3.p.rapidapi.com/v1/joke")
