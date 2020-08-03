@@ -7,8 +7,7 @@ class Bot < Inspire
   def initialize
     env = Dotenv.load
     @token = env['TOKEN']
-    # print self.request_joke
-    
+      
     Telegram::Bot::Client.run(@token) do |bot|
       bot.listen do |message|
         case message.text
