@@ -15,7 +15,14 @@ describe Inspire do
   describe '#request_joke' do
     it 'returns a joke from the API url' do
       joke = Inspire.new
-      expect(joke = URI).to eqtrue
+      expect(joke == URI).to eq URI
+    end
+  end
+
+  describe '#request_inspiration' do
+    it 'returns a joke from the API url' do
+      inspiration = Inspire.new
+      expect(inspiration == URI).to eq URI
     end
   end
 end

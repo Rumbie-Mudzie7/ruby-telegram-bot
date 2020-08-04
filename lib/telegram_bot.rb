@@ -6,7 +6,7 @@ class Bot < Inspire
   def initialize
     env = Dotenv.load
     @token = env['TOKEN']
-
+    # rubocop:disable Layout/LineLength
     Telegram::Bot::Client.run(@token) do |bot|
       bot.listen do |message|
         case message.text
@@ -32,5 +32,6 @@ class Bot < Inspire
         end
       end
     end
+    # rubocop:enable Layout/LineLength
   end
 end

@@ -2,6 +2,7 @@ require 'telegram/bot'
 require 'net/http'
 require 'json'
 require_relative 'telegram_bot.rb'
+require 'dotenv'
 
 class Inspire
   attr_reader :joke, :inspiration
@@ -20,7 +21,9 @@ class Inspire
 
     request = Net::HTTP::Get.new(url)
     request['x-rapidapi-host'] = 'joke3.p.rapidapi.com'
-    request['x-rapidapi-key'] = '67416fcf58msh36e276c4c095524p14066bjsn6807f4ad4811'
+    env = Dotenv.load
+    @key1 = env['API_KEY1']
+    request['x-rapidapi-key'] = @key1
 
     response = http.request(request)
     response = JSON.parse(response.read_body)
