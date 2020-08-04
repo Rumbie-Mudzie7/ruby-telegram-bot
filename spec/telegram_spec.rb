@@ -1,6 +1,7 @@
+require_relative '../lib/telegram/bot'
 require_relative '../lib/telegram_bot.rb'
 require_relative '../lib/quotes.rb'
-require_relative '../lib/telegram/bot'
+
 
 RSpec.describe do
   it 'should inherit behavior from Parent' do
