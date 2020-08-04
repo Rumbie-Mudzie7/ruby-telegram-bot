@@ -82,6 +82,7 @@ Give a ⭐️ if you like this project!
 ## :thumbsup: Acknowledgements
 
 [Muhammad Talha Waqar](https://github.com/talhawaqar)<br>
+[Marshall Akpan] (https://github.com/uimarshall)<br>
 
 ## License
 This project is MIT licensed.
