@@ -7,5 +7,3 @@ gem 'json'
 gem 'net-http-persistent'
 gem 'screenshot'
 gem 'telegram-bot-ruby'
-
-
