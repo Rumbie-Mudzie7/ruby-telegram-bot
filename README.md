@@ -3,7 +3,7 @@
 ## Screenshot
 <!-- <img src = '/images/telegram-bot-screenshot.png'> -->
 ![Screenshot](/images/Screenshot.png)
-<!-- ![Page screenshot](images/telegram-bot-screenshot.png) -->
+<!-- ![Page screenshot](images/Telegram-bot-screenshot.png) -->
 
 
 The Telegram Bot is a friendly bot, built using the Ruby best practices and implementing Object Oriented Programming principles.
