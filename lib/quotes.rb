@@ -42,7 +42,7 @@ class Inspire
     env = Dotenv.load
     @key1 = env['API_KEY1']
     request['x-rapidapi-key'] = @key1
-   
+
     response = http.request(request)
     response = JSON.parse(response.read_body)
     response['quote']
