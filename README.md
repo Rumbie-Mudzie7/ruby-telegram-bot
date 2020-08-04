@@ -1,6 +1,6 @@
 # RUBY-TELEGRAM-BOT
 
-![Page screenshot](images/telegram-bot-screenshot.png)
+![Page screenshot](./images/telegram-bot-screenshot.png)
 
 The Telegram Bot is built using the Ruby best practices and implementing Object Oriented Programming principles.
 
