@@ -1,4 +1,7 @@
-# ruby-telegram-bot
+# RUBY-TELEGRAM-BOT
+
+![Page screenshot](images/telegram_bot-screenshot.png)
+
 The Telegram Bot is built using the Ruby best practices and implementing Object Oriented Programming principles.
 
 The program creates and initializes a Telegram bot. The program then retrieves the first name of the account holder for a friendly greeting and advises them to use  /start to start the bot,  /stop to end the bot, /inspire to get a inspirational quote everytime you request for it or /joke to get a joke everytime it is requested. 
