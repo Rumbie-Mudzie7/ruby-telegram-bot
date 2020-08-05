@@ -1,7 +1,7 @@
 require 'telegram/bot'
+require_relative '../lib/telegram_bot.rb'
 require 'net/http'
 require 'json'
-require_relative 'telegram_bot.rb'
 require 'dotenv'
 
 class Inspire
