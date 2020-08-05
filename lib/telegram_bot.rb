@@ -1,3 +1,4 @@
+require 'telegram/bot'
 require_relative '../lib/quotes.rb'
 require 'dotenv'
 
