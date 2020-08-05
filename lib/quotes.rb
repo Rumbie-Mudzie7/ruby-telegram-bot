@@ -1,4 +1,3 @@
-require 'telegram/bot'
 require 'net/http'
 require 'json'
 require_relative 'telegram_bot.rb'
