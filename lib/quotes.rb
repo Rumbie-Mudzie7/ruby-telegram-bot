@@ -5,8 +5,6 @@ require_relative 'telegram_bot.rb'
 require 'dotenv'
 
 class Inspire
-  attr_reader :joke, :inspiration
-
   def initialize
     @joke = joke
     @inspiration = inspiration
