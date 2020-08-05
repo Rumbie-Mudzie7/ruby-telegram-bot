@@ -34,13 +34,14 @@ Install Telegram on your device from https://telegram.org/ and make sure you hav
 
 With ruby installed and an account created, we also need to obtain a code from telegram called an A.P.I token. To do this we need the help of the bot father. Just type the command /new bot, and follow the instructions of the bot father.
 
+Search for an API key, online that is compactible with your application to obtain an end-point-response url that returns either a joke or inspiration.
 
 ## 🔨 Setup <a name = "setup"></a>
 
 - To clone the repo to your local repository. Follow this steps
 - <code> git clone https://github.com/Rumbie-Mudzie7/ruby-telegram-bot.git</code>
 - <code> cd ruby-telegram-bot</code>
-- <code>bin/main.rb</code>
+- <code> ruby bin/main</code>
 
 Install Gems
 From the command-line or terminal run the command 'gem list --local' to check if you have gems listed below, and if not then enter the command 'bundle install' to install the dependencies from the Gemfile, or use the following commands to install required gems manually as needed:
@@ -51,13 +52,16 @@ gem install dotenv
 
 gem install rspec
 
+In your working folder, create a .env text file. We then assign token and API keys, variables that we can use to run the bot and paste them inside the .env file. In each ruby file that we have created, we need to require 'dotenv', that is will be used to load the token key.
+
 
 ## 🔨 Usage <a name = "setup"></a>
 Make sure you are in the working folder or move to it using either one of the following on the command line or terminal: cd ruby-telegram-bot chdir ruby-telegram-bot
 
 Run the program using the following:
 
-ruby bin/main.rb
+ruby bin/main
+ctrl + C to stop the program from running.
 
 Run tests
 Run RSPEC tests using the following on the command line or terminal:
