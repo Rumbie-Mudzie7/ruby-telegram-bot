@@ -1,8 +1,7 @@
-require_relative 'telegram/bot'
-require_relative '../lib/telegram_bot.rb'
-require_relative 'net/http'
-require_relative 'json'
-require_relative 'dotenv'
+require 'telegram/bot'
+require 'net/http'
+require 'json'
+require 'dotenv'
 
 class Inspire
   def initialize
