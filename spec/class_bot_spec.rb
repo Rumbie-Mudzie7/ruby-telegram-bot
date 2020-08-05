@@ -1,4 +1,4 @@
-require 'telegram_bot'
+require './lib/class_bot'
 
 describe Bot do
   it 'should inherit behavior from Parent' do
@@ -24,7 +24,4 @@ describe Bot do
       expect(inspiration.request_inspiration).to eq('An Apple a day keeps you busy anyway')
     end
   end
-
 end
-
-
