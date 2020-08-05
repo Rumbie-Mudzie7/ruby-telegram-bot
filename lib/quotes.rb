@@ -1,3 +1,4 @@
+require 'telegram/bot'
 require 'net/http'
 require 'json'
 require 'dotenv'
