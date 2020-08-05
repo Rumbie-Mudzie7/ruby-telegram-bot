@@ -1,6 +1,6 @@
 require 'telegram_bot'
 
-RSpec.describe do
+describe Bot do
   it 'should inherit behavior from Parent' do
     expect(Bot < Inspire).to eq true
   end
