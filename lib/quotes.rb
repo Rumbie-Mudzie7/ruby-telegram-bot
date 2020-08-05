@@ -1,5 +1,4 @@
-require 'telegram/bot'
-require_relative '../lib/telegram_bot'
+require_relative '../lib/telegram_bot.rb'
 require 'net/http'
 require 'json'
 require 'dotenv'
