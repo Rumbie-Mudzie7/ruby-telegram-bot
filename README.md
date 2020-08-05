@@ -64,7 +64,7 @@ Make sure you are in the working folder or move to it using either one of the fo
 Run the program using the following:
 
 ruby bin/main
-ctrl + C to stop the program from running.
+ctrl + C on command line to stop the program from running.
 
 Run tests
 Run RSPEC tests using the following on the command line or terminal:
