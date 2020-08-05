@@ -43,8 +43,8 @@ Search for an API key, online that is compactible with your application to obtai
 - <code> cd ruby-telegram-bot</code>
 - <code> ruby bin/main</code>
 
-Name of Bot :  MyRyan
-Handle : @RumbieBot
+Name of Bot :  RumbieBot
+Handle : @MyRyan
 
 Install Gems
 From the command-line or terminal run the command 'gem list --local' to check if you have gems listed below, and if not then enter the command 'bundle install' to install the dependencies from the Gemfile, or use the following commands to install required gems manually as needed:
