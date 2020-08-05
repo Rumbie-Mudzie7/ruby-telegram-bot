@@ -4,6 +4,8 @@ require 'json'
 require 'dotenv'
 
 class Inspire
+  attr_reader :joke, :inspiration
+  
   def initialize
     @joke = joke
     @inspiration = inspiration
@@ -11,7 +13,6 @@ class Inspire
 
   def request_joke
     url = URI('https://joke3.p.rapidapi.com/v1/joke')
-
     http = Net::HTTP.new(url.host, url.port)
     http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
@@ -29,7 +30,6 @@ class Inspire
 
   def request_inspiration
     url = URI('https://quotes21.p.rapidapi.com/quote')
-
     http = Net::HTTP.new(url.host, url.port)
     http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
