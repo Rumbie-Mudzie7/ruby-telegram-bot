@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require 'telegram/bot'
+require_relative '../lib/class_bot.rb'
+require_relative '../lib/quotes.rb'
+require 'dotenv'
+Bot.new
