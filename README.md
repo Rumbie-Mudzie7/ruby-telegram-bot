@@ -22,6 +22,7 @@ APIs : https://joke3.p.rapidapi.com/v1/joke
 ## 🔴 Live Demo <a name = "demo"></a>
 https://www.loom.com/share/c600de47ed504c0097b9f20af89830ba
 
+[![Run on Repl.it](https://repl.it/badge/github/Rumbie-Mudzie7/ruby-telegram-bot)](https://repl.it/github/Rumbie-Mudzie7/ruby-telegram-bot)
 
 ## Getting Started
 To get a local copy up and running follow these simple steps:
