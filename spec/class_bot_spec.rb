@@ -1,4 +1,4 @@
-require 'class_bot'
+require_relative '../lib/class_bot'
 
 describe Bot do
   it 'should inherit behavior from Parent' do
